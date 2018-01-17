@@ -137,6 +137,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Axure学习小记02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/17/Axure学习小记02/">Axure学习小记02</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/17/Axure学习小记02/" class="archive-article-date">
+  	<time datetime="2018-01-17T06:19:50.149Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在开发一个项目的前期似乎都会用到Axure来设计原型或画图，之前期末真是忙成一条狗，都没有来得及总结。</p>
+<h3 id="内部框架的使用"><a href="#内部框架的使用" class="headerlink" title="内部框架的使用"></a>内部框架的使用</h3><p>将我们设计好的原型在网站上预览，要求既可以看到外面的手机壳也要看到里面的内容，但是在页面跳转的时候网页是会刷新的，导致看到手机壳也是一闪一闪的。使用内部框架既可以解决这个问题，又可以只用一个手机壳就可以覆盖到所有的页面。</p>
+<p>第一步：新建一个独立的页面，这个页面是用来专门放手机壳的（Axure官网上可以下载元件）<br>第二步：在这个手机屏幕里放一个<b>内联框架</b><br>没错，就是它！<br><img src="/assets/img/Axure/2-1.png" alt="Alt text"><br>第三步：选中该内联框架，在“属性”中更改框架滚动条为<b>从不显示</b>，并勾选<b>隐藏边框</b>即可<br><img src="/assets/img/Axure/2-2.png" alt="Alt text"></p>
+<p><br></p>
+<h3 id="动态面板实现上下拖动"><a href="#动态面板实现上下拖动" class="headerlink" title="动态面板实现上下拖动"></a>动态面板实现上下拖动</h3><p>其实就是因为手机屏幕的高度是有限的，一屏放不下，实现上下拖动，而且拖动到最上面和最下面一定程度会无法再拖动，并且释放后会自动回到最顶和最底。</p>
+<p><b>原理</b>：<br>1.添加只能在Y轴上拖动的动态面板；<br>2.对于顶部往下拉到一定程度不能继续拉的功能的具体做法是在顶部设置一块图片热区，然后给动态面板设定拖动动态面板时事件，当动态面板未接触该图片热区，则将动态面板移动到一个绝对位置，其中要注意的是必须将这个用例放在动态面板沿Y轴移动的前面。顶部直接下拉松手后的返回功能也是类似，在上面放一个很小的图片热区，然后设定结束拖动动态面板时事件，如果动态面板未接触到该图片热区，则将动态面板移动到绝对位置；<br>3.底部的实现类似。</p>
+<p><b>具体实现过程</b>：<br>1.拖入一个动态面板first，把first的大小设置为手机可见区域的长和宽，位置为(0,0)。<br>2.双击该面板进入<b>面板状态管理</b>，添加面板状态State1<br><img src="/assets/img/Axure/2-3.png" alt="Alt text"></p>
+        
+          <a class="article-more-a" href="/2018/01/17/Axure学习小记02/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">工具使用</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Axure学习小记01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -373,7 +451,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 little
+    		&copy; 2018 little
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten

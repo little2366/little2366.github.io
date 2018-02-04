@@ -137,6 +137,83 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-AngularJS学习小记01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/04/AngularJS学习小记01/">AngularJS学习小记01</a>
+    </h1>
+  
+
+        
+        <a href="/2018/02/04/AngularJS学习小记01/" class="archive-article-date">
+  	<time datetime="2018-02-04T01:51:33.573Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>之前在服务外包实验室接触了AngularJS，可到现在也记不得多少，尴尬<br>好了，在这里给自己定个小目标：三天把网站里的AngularJS内容学完并做好笔记，加油ヾ(◍°∇°◍)ﾉﾞ</p>
+<h3 id="AngularJS简介"><a href="#AngularJS简介" class="headerlink" title="AngularJS简介"></a>AngularJS简介</h3><p>1、当网页加载完毕，AngularJS 自动开启。<br>ng-app 指令告诉 AngularJS该 div 元素是 AngularJS 应用程序 的”所有者”。<br>ng-model 指令把输入域的值绑定到应用程序变量 name。<br>以 ng 作为前缀，比如ng-init初始化应用程序的变量，ng-bind把应用程序变量绑定到某个段落的innerHTML<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div ng-app=<span class="string">""</span>&gt;</div><div class="line">     &lt;p&gt;名字 : &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> ng-model=<span class="string">"name"</span>&gt;&lt;/p&gt;</div><div class="line">     &lt;h1&gt;Hello &#123;&#123;name&#125;&#125;&lt;/h1&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>2、AngularJS 模块<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var app = angular.module(<span class="string">'myApp'</span>, []);</div></pre></td></tr></table></figure></p>
+<p>3、AngularJS 控制器（需要写在javaScript文件中，要注意拼写！！！）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var app = angular.module(<span class="string">'myApp'</span>, []);</div><div class="line">app.controller(<span class="string">'myCtrl'</span>, <span class="keyword">function</span>(<span class="variable">$scope</span>)&#123;</div><div class="line">    <span class="variable">$scope</span>.firstName = <span class="string">"little"</span>;</div><div class="line">    <span class="variable">$scope</span>.lastName = <span class="string">"jiang"</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h3 id="AngularJS表达式"><a href="#AngularJS表达式" class="headerlink" title="AngularJS表达式"></a>AngularJS表达式</h3><p>1、表达式可以是类似数学运算，也可以字符串的相加，也可以是对象的成员变量，也可以是数组中的第几个元素<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; quantity * cost &#125;&#125;</div><div class="line">&#123;&#123;firstName + <span class="string">" "</span> + lastName&#125;&#125;</div><div class="line">&#123;&#123; person.lastName &#125;&#125;</div><div class="line">&#123;&#123; points[2] &#125;&#125;</div></pre></td></tr></table></figure></p>
+<p>2、ng-app可以出现在HTML文档的任意一个元素上，但只出现一次，即使出现多次也只有第一个是有效的。</p>
+        
+          <a class="article-more-a" href="/2018/02/04/AngularJS学习小记01/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">编程语言</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Axure学习小记02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -524,6 +601,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程语言</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">工具使用</a>

@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | little</title>
+  <title>AngularJS学习小记01 | little</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="little">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="之前在服务外包实验室接触了AngularJS，可到现在也记不得多少，尴尬好了，在这里给自己定个小目标：三天把网站里的AngularJS内容学完并做好笔记，加油ヾ(◍°∇°◍)ﾉﾞ AngularJS简介1、当网页加载完毕，AngularJS 自动开启。ng-app 指令告诉 AngularJS该 div 元素是 AngularJS 应用程序 的”所有者”。ng-model 指令把输入域的值绑定到应">
+<meta name="keywords" content="编程语言">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AngularJS学习小记01">
+<meta property="og:url" content="http://yoursite.com/2018/02/04/AngularJS学习小记01/index.html">
 <meta property="og:site_name" content="little">
+<meta property="og:description" content="之前在服务外包实验室接触了AngularJS，可到现在也记不得多少，尴尬好了，在这里给自己定个小目标：三天把网站里的AngularJS内容学完并做好笔记，加油ヾ(◍°∇°◍)ﾉﾞ AngularJS简介1、当网页加载完毕，AngularJS 自动开启。ng-app 指令告诉 AngularJS该 div 元素是 AngularJS 应用程序 的”所有者”。ng-model 指令把输入域的值绑定到应">
+<meta property="og:updated_time" content="2018-02-04T10:12:36.258Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="little">
+<meta name="twitter:title" content="AngularJS学习小记01">
+<meta name="twitter:description" content="之前在服务外包实验室接触了AngularJS，可到现在也记不得多少，尴尬好了，在这里给自己定个小目标：三天把网站里的AngularJS内容学完并做好笔记，加油ヾ(◍°∇°◍)ﾉﾞ AngularJS简介1、当网页加载完毕，AngularJS 自动开启。ng-app 指令告诉 AngularJS该 div 元素是 AngularJS 应用程序 的”所有者”。ng-model 指令把输入域的值绑定到应">
   
     <link rel="alternative" href="/atom.xml" title="little" type="application/atom+xml">
   
@@ -135,36 +140,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-AngularJS学习小记01" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/02/04/AngularJS学习小记01/" class="archive-article-date">
-  	<time datetime="2018-02-04T01:51:33.573Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-04</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/04/AngularJS学习小记01/">AngularJS学习小记01</a>
+    <h1 class="article-title" itemprop="name">
+      AngularJS学习小记01
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/02/04/AngularJS学习小记01/" class="archive-article-date">
+  	<time datetime="2018-02-04T01:51:33.573Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>之前在服务外包实验室接触了AngularJS，可到现在也记不得多少，尴尬<br>好了，在这里给自己定个小目标：三天把网站里的AngularJS内容学完并做好笔记，加油ヾ(◍°∇°◍)ﾉﾞ</p>
+<h3 id="AngularJS简介"><a href="#AngularJS简介" class="headerlink" title="AngularJS简介"></a>AngularJS简介</h3><p>1、当网页加载完毕，AngularJS 自动开启。<br>ng-app 指令告诉 AngularJS该 div 元素是 AngularJS 应用程序 的”所有者”。<br>ng-model 指令把输入域的值绑定到应用程序变量 name。<br>以 ng 作为前缀，比如ng-init初始化应用程序的变量，ng-bind把应用程序变量绑定到某个段落的innerHTML<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div ng-app=<span class="string">""</span>&gt;</div><div class="line">     &lt;p&gt;名字 : &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> ng-model=<span class="string">"name"</span>&gt;&lt;/p&gt;</div><div class="line">     &lt;h1&gt;Hello &#123;&#123;name&#125;&#125;&lt;/h1&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>2、AngularJS 模块<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var app = angular.module(<span class="string">'myApp'</span>, []);</div></pre></td></tr></table></figure></p>
+<p>3、AngularJS 控制器（需要写在javaScript文件中，要注意拼写！！！）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var app = angular.module(<span class="string">'myApp'</span>, []);</div><div class="line">app.controller(<span class="string">'myCtrl'</span>, <span class="keyword">function</span>(<span class="variable">$scope</span>)&#123;</div><div class="line">    <span class="variable">$scope</span>.firstName = <span class="string">"little"</span>;</div><div class="line">    <span class="variable">$scope</span>.lastName = <span class="string">"jiang"</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h3 id="AngularJS表达式"><a href="#AngularJS表达式" class="headerlink" title="AngularJS表达式"></a>AngularJS表达式</h3><p>1、表达式可以是类似数学运算，也可以字符串的相加，也可以是对象的成员变量，也可以是数组中的第几个元素<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; quantity * cost &#125;&#125;</div><div class="line">&#123;&#123;firstName + <span class="string">" "</span> + lastName&#125;&#125;</div><div class="line">&#123;&#123; person.lastName &#125;&#125;</div><div class="line">&#123;&#123; points[2] &#125;&#125;</div></pre></td></tr></table></figure></p>
+<p>2、ng-app可以出现在HTML文档的任意一个元素上，但只出现一次，即使出现多次也只有第一个是有效的。</p>
+<a id="more"></a>
+<h3 id="AngularJS指令"><a href="#AngularJS指令" class="headerlink" title="AngularJS指令"></a>AngularJS指令</h3><p>1、ng-repeat用于重复一个html元素，通常是数组元素和列表li结合起来使用(这里的数组元素也可以是对象数组)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;div ng-app=<span class="string">""</span> ng-init=<span class="string">"cities=['ZheJiang', 'JiangSu', 'ShangHai']"</span>&gt;</div><div class="line">    &lt;p&gt;使用ng-repeat来重复数组元素&lt;/p&gt;</div><div class="line">    &lt;ul&gt;</div><div class="line">        &lt;li ng-repeat = <span class="string">'x in cities'</span>&gt;</div><div class="line">            &#123;&#123;x&#125;&#125;</div><div class="line">        &lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>2、使用 .directive 函数来创建自定义的指令<br>命名时使用驼峰，使用时用‘-’分割</p>
+<p>3、restrict 值可以是以下几种:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">E 作为元素名使用</div><div class="line">A 作为属性使用</div><div class="line">C 作为类名使用</div><div class="line">M 作为注释使用</div></pre></td></tr></table></figure></p>
+<h3 id="AngularJS模型"><a href="#AngularJS模型" class="headerlink" title="AngularJS模型"></a>AngularJS模型</h3><p>ng-model可以为应用数据提供状态值<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">ng-valid: 验证通过</div><div class="line">ng-invalid: 验证失败</div><div class="line">ng-valid-[key]: 由<span class="variable">$setValidity</span>添加的所有验证通过的值</div><div class="line">ng-invalid-[key]: 由<span class="variable">$setValidity</span>添加的所有验证失败的值</div><div class="line">ng-pristine: 控件为初始状态</div><div class="line">ng-dirty: 控件输入值已变更</div><div class="line">ng-touched: 控件已失去焦点</div><div class="line">ng-untouched: 控件未失去焦点</div><div class="line">ng-pending: 任何为满足<span class="variable">$asyncValidators</span>的情况</div></pre></td></tr></table></figure></p>
+<h3 id="AngularJS作用域"><a href="#AngularJS作用域" class="headerlink" title="AngularJS作用域"></a>AngularJS作用域</h3><p>1、根作用域rootScope在循环对象内外都可以访问<br>2、$rootscope设置的变量在所有controller里面都是可以直接用来显示的<br>3、$rootScope全局对象的属性可在所有子作用域中访问（也只能访问到另一个作用域当中的全局变量），子作用域互相无法访问对方的私有变量<br>4、控制器的定义是有先后顺序的，后面控制器中定义的rootScope变量，在它前面的控制器中访问不到。<br>5、不在控制器中使用时不能访问到定义的私有变量和相关函数，全局变量是可以访问到的。</p>
+<h3 id="AngularJS控制器"><a href="#AngularJS控制器" class="headerlink" title="AngularJS控制器"></a>AngularJS控制器</h3><p>外部文件中的控制器：类似JavaScript文件，把定义控制器的js文件通过script标签引入即可</p>
+<h3 id="AngularJS过滤器"><a href="#AngularJS过滤器" class="headerlink" title="AngularJS过滤器"></a>AngularJS过滤器</h3><p>1、即使用管道字符（|）添加到表达式和指令中<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">uppercase 过滤器将字符串格式化为大写</div><div class="line">lowercase 过滤器将字符串格式化为小写</div><div class="line">date <span class="string">"yyyy-MM-dd HH:mm:ss"</span>  格式化显示的时间</div><div class="line">number :2 格式化要保留的小数</div><div class="line">currency:<span class="string">"RMB ￥ "</span> 过滤器将数字格式化为货币格式</div><div class="line">orderBy 过滤器根据表达式排列数组</div><div class="line">filter 过滤器从数组中选择一个子集（类似字符串匹配）</div><div class="line">limitTo :6  从前面开始截取6位（若为负数则表示从后往前截取）</div></pre></td></tr></table></figure></p>
+<p>2、也可以自定义过滤器app.filter()<br>   字符串反转：text.split(“”).reverse().join(“”);</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -176,170 +194,106 @@
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/17/Axure学习小记02/" class="archive-article-date">
-  	<time datetime="2018-01-17T06:19:50.149Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/17/Axure学习小记02/">Axure学习小记02</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">工具使用</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
       
-        </div></section>
+
       
+
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/31/Axure学习小记01/" class="archive-article-date">
-  	<time datetime="2017-10-31T11:13:23.053Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/31/Axure学习小记01/">Axure学习小记01</a>
-    </h1>
-  
+      </div>
+    </span>
+  </div>
+</div>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">工具使用</a>
-        		</li>
-      		
-		</ul>
-	</div>
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/02/04/AngularJS学习小记01/" alt="微信分享二维码">
+    </div>
+</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/31/test/" class="archive-article-date">
-  	<time datetime="2017-10-31T10:59:54.360Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-31</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/17/Axure学习小记02/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Axure学习小记02</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/31/test/">test</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/20/hello-world/" class="archive-article-date">
-  	<time datetime="2017-10-20T06:36:54.194Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/20/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -362,8 +316,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
